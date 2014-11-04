@@ -74,7 +74,6 @@ module BootstrapCalendarRails
         # return header, which contains both desktop and mobile day names
         def header
           content_tag 'div', class: "cal-row-fluid cal-row-head" do
-            build_header(day_names, "cal-span1 visible-desktop") +
             build_header(mobile_day_names, "cal-span1 hidden-desktop")
           end
         end
